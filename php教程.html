@@ -1,0 +1,104 @@
+
+<!DOCTYPE html> <!--告诉浏览器我的当前页面是哪个版本的html-->
+<html>
+<head>
+	<title>这是一个html最简单的一个网站</title>
+	<meta charset="utf-8">
+	<meta name="Keywords" content="论坛">
+	<meta name="description" content="论坛">
+	<meta name="author" content="HashSet">
+</head>
+<body bgcolor="yellow" ><!--backgroud表示的是背景图片-->
+	<pre> <!--这个是预排版标记，代码怎么写，显示出来的就是怎么样的-->
+	<font>这是web教学的一个开始啦</font>
+	<!--HTML的全称为hypertext markup language-->
+	<i>这个是斜体</i>
+	<b>这个是加粗</b>
+	<u>这个是下划线</u>
+	<s>这个是删除线</s>
+	<sub>这个是上标</sub>
+	<sup>这个是下标</sup>
+	<!--br表示的是换行的意思-->
+	<!--hr表示的水平线的意思-->
+	<h1>标题等级为1的标题</h1>
+	<p>段落标记</p>
+	</pre>
+	<form method="get"  action="./sdhsehj.php">
+	用户名:<input type="text" name="注册" value=""><br><!--不输入的话默认值就位value的值-->
+	密码：<input type="password" name="密码"><br>
+	<!--单选按钮-->
+	性别:<input type="radio" name="sex" value="男">男
+	<input type="radio" name="sex" value="女">女   <!--里面的name值要保持一致，不然就不是单选框-->
+	<br>
+	多选框<input type="checkbox" name="aihao" value="打游戏">打游戏
+	<input type="checkbox" name="aihao" value="吃饭">吃饭
+	<input type="checkbox" name="aihao" value="睡觉">睡觉
+	<input type="checkbox" name="aihao" value="大冻过水">打豆豆
+	<br>
+	<br>
+	<br>
+	学历:
+	<select name="学历">
+		<option value="1">小学</option>
+		<option value="2">初中</option>
+		<option value="3">高中</option>
+		<option value="4">大学</option>
+		<option value="5">研究生</option>
+	</select>
+	<br>
+	按钮:
+	1.提交：
+	<input type="submit" name="显示到按钮上的名称" />
+	<br>
+	2.图片提交
+	<input type="image" src="图片的地址" /> 
+	3.普通按钮:没有任何意义的按钮，和js关联使用
+	<input type="button" name="123"  value="123" />
+	<br>
+	<br>
+	<br>
+	重置按钮:
+	<input type="reset" name="chongzhi" />
+	头像
+	<input type="file" name="shangchuang">
+</form> <!--表单域的显示，需要使用form标记把表单的内容括起来这个时候才可以提交-->
+    <post>和get方式的区别在于，get看得到，post看不到
+    <table border="1" align="center" bordercolor="red" width="500" height="200" bgcolor="green" cellpadding="1 " cellspacing="2">
+    	<tr>
+    		<th>id</th>   <!--标题单元格-->
+    		<th>姓名</th>
+    		<th>年龄</th>
+    	</tr>   <!--tr只有高度没有宽度-->
+    	<tr valign="top">
+    		<td align="center" rowspan="2">1</td>  <!--可以使用align来使每行对其-->  <!--普通单元格-->
+    		<td colspan="2">2</td>
+    		<!--<td>3</td>-->
+    	</tr>
+    	<tr align="center">
+    		<!--<td><font color="red">4</font></td>-->
+    		<td>5</td>
+    		<td>6</td><!--用于td里面的，tr没有，rowspan进行跨行合并-->
+    	</tr>
+    </table>
+    <br>  <br> <br> <br> <br>
+    <ul>
+    	<li>first</li>
+    	<li>second</li>
+    	<li>third</li>
+    	<li>forth</li>
+    </ul>
+    <ol>
+    	<li>first</li>
+    	<li>first</li>
+    	<li>first</li>
+    </ol>
+    <dl>
+    	<dt>标题</dt>
+    	<dd>描述</dd>
+    	<dt></dt>
+    	<dd></dd>
+    </dl>
+    <!--marquee是滚动元素的双标记-->
+    <embed></embed><!--多媒体标记-->
+</body>
+</html>
